@@ -46,3 +46,8 @@ This will remove the Git information so that you can re-initialize the project f
 SASS files can be created in:
 
 > _/components/scss
+
+## Configuration Files!
+
+  * __package.json__ - Project version information for building. Project name, author, version goes here.
+  * __Gruntfile.js__ - This file is to Grunt, what bower.json is to bower. Here goes Grunt dependencies/plugins and its configurations. Like bower, if you add a new dependency, run `npm install` to download the new dependencies
