@@ -21,17 +21,6 @@ module.exports = function(grunt) {
           config: 'config.rb'
         } //options
       } //dev
-      dist: {
-                options: {
-                    sassDir: '_/components/scss',
-                    imagesDir: '/app/img',
-                    cssDir: 'build/css',
-                    javascriptsDir: 'build/lib',
-                    httpGeneratedImagesPath: 'build/img',
-                    noLineComments: true,
-                    outputStyle: 'compressed'
-                } //options
-            } //dist
     }, //compass
 
     watch: {
@@ -84,5 +73,4 @@ module.exports = function(grunt) {
 
   }) //initConfig
   grunt.registerTask('default', ['connect', 'watch']);
-  grunt.registerTask('dist', ['compass']);
 } //exports
