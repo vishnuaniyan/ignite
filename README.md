@@ -1,6 +1,6 @@
 # Ignite - Boilerplate Project
 
-## Ignite structure for FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
+#### Ignite structure for FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
 
 ## Features
 

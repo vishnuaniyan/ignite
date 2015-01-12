@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         options: {
           config: 'config.rb'
         } //options
-      } //dev
+      }, //dev
       dist: {
                 options: {
                     sassDir: '_/components/scss',
