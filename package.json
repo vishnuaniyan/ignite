@@ -7,6 +7,6 @@
     "grunt-contrib-compass": "~0.8.0",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-connect": "~0.8.0",
-    // "grunt-scss-lint": "~0.1.0"
+    "grunt-scss-lint": "~0.1.0"
   }
 }

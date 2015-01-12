@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  // grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-contrib-connect');
   // require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.initConfig({
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 
       sass: {
         files: ['_/components/scss/**/*.scss'],
-        tasks: ['compass:dev']
+        tasks: ['scsslint', 'compass:dev']
       }, //sass
 
       html: {
@@ -47,16 +47,16 @@ module.exports = function(grunt) {
 
     }, //watch
 
-    // scsslint: {
-    //   allFiles: [
-    //     '_/components/scss/**/*.scss'
-    //   ],
-    //   options: {
-    //     config: null,
-    //     reporterOutput: null,
-    //     colorizeOutput: true
-    //   }
-    // }, // scsslint
+    scsslint: {
+      allFiles: [
+        '_/components/scss/**/*.scss'
+      ],
+      options: {
+        config: null,
+        reporterOutput: null,
+        colorizeOutput: true
+      }
+    }, // scsslint
 
     connect: {
       server: {
